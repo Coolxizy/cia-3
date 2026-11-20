@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechSpark Fest 2026</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f7f6;
+      color: #243b3b;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 30px;
+      background: #173b3f;
+      color: white;
+    }
+
+    .logo {
+      margin: 0;
+      color: 
+      #167a27;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #0a9247;
+    }
+
+    .hero {
+      padding: 30px 16px;
+      text-align: center;
+      background: #13bbd1;
+      color: white;
+    }
+
+    .layout {
+      display: flex;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+      padding: 16px;
+    }
+
+    main {
+      flex: 1;
+      min-width: 0;
+    }
+
+    aside {
+      width: 260px;
+      height: fit-content;
+      padding: 16px;
+      background: white;
+      border-radius: 8px;
+    }
+
+    aside img {
+      width: 100%;
+      height: auto;
+    }
+
+    .note {
+      margin-top: 12px;
+      padding: 12px;
+      background: #fff3d6;
+      border-left: 4px solid #fca311;
+    }
+
+    section {
+      margin-bottom: 16px;
+      padding: 16px;
+      background: white;
+    }
+
+    h2, h3 {
+      color: #173b3f;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 23%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    ul, ol {
+      padding-left: 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      border: 1px solid #aaa;
+      text-align: left;
+    }
+
+    th {
+      background: #28666e;
+      color: white;
+    }
+
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+    }
+
+    button {
+      margin-top: 12px;
+      padding: 8px 14px;
+      background: #28666e;
+      color: white;
+      border: 0;
+    }
+
+    button:hover {
+      background: #173b3f;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .layout {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+      }
+
+      .gallery img {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <h2 class="logo">TechSpark</h2>
+    <nav>
+    <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#events">Events</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>TechSpark Fest 2026</h1>
+    <p>Two days of coding, robotics, design and fun.</p>
+  </div>
+
+  <div class="layout">
+  <main>
+    <section id="gallery">
+      <h2>Fest Gallery</h2>
+      <div class="gallery">
+        <img src="images/event1.jpg" alt="Festival exhibition">
+        <img src="images/event2.webp" alt="Live festival performance">
+        <img src="images/event3.avif" alt="Fest event">
+      </div>
+    </section>
+
+    <section id="events">
+        <h2>Events</h2>
+      <h3>Registration steps</h3>
+      <ol>
+        <li>log into the website using email.</li>
+        <li>locate to the registration link for the event.</li>
+        <li>Enter the details for the registration.</li>
+        <li>Submit the registration after checking and filling in the details.</li>
+      </ol>
+      <h3>Event Names</h3>
+      <ul>
+        <li>Tech event</li>
+        <li>Tech united</li>
+        <li>gadget fest</li>
+        <li>digital contest</li>
+      </ul>
+    </section>
+
+    <section id="schedule">
+      <h2>Fest Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Event</th>
+            <th>Hall</th>
+            <th>Coordinator</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10:30 AM</td>
+            <td>tech fest</td>
+            <td>siminar hall</td>
+            <td>robert.k</td>
+          </tr>
+          <tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="register">
+      <h2>Register for the Fest</h2>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" name="name" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="phonenumber">Phone Number</label>
+        <input id="phonenumber" name="phonenumber" type="tel" required>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <h3>Important Dates</h3>
+    <ul>
+      <li>Registration closes: 5 December</li>
+      <li>Fest days: 12 &amp; 13 December</li>
+    </ul>
+    <div class="note">Free entry for all students with ID card.</div>
+    <p><a href="https://www.svcetechspark.com/"><img src="images/event4.webp" alt="More about TechSpark"></a></p>
+    <p><a href="https://events.yourstory.com/techsparks-2026" target="_blank" rel="new tab">TechSparks 2026</a></p>
+  </aside>
+  </div>
+
+  <footer>&copy; 2026 TechSpark Fest</footer>
+</body>
+</html
